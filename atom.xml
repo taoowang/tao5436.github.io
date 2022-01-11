@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://tao5436.github.io</id>
-    <title>Gridea</title>
-    <updated>2022-01-11T12:50:19.899Z</updated>
+    <title>Blog</title>
+    <updated>2022-01-11T13:06:17.957Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://tao5436.github.io"/>
     <link rel="self" href="https://tao5436.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>莫听穿林打叶声，何妨吟啸且徐行。</subtitle>
     <logo>https://tao5436.github.io/images/avatar.png</logo>
     <icon>https://tao5436.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2022, Gridea</rights>
+    <rights>All rights reserved 2022, Blog</rights>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://tao5436.github.io/post/hello-gridea/</id>
