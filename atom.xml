@@ -1,15 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://tao5436.github.io</id>
-    <title>Blog</title>
-    <updated>2022-01-11T14:43:44.113Z</updated>
+    <title>tao</title>
+    <updated>2022-01-12T05:01:36.406Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://tao5436.github.io"/>
     <link rel="self" href="https://tao5436.github.io/atom.xml"/>
-    <subtitle>莫听穿林打叶声，何妨吟啸且徐行。</subtitle>
+    <subtitle>莫听穿林打叶声    何妨吟啸且徐行</subtitle>
     <logo>https://tao5436.github.io/images/avatar.png</logo>
     <icon>https://tao5436.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2022, Blog</rights>
+    <rights>All rights reserved 2022, tao</rights>
+    <entry>
+        <title type="html"><![CDATA[Conda]]></title>
+        <id>https://tao5436.github.io/post/conda/</id>
+        <link href="https://tao5436.github.io/post/conda/">
+        </link>
+        <updated>2022-01-12T04:59:48.000Z</updated>
+        <content type="html"><![CDATA[<h5 id="创建环境">创建环境</h5>
+<p><code>conda create --name py3.7 python=3.7</code></p>
+<h5 id="激活环境">激活环境</h5>
+<p><code>conda activate py3.7</code></p>
+<h5 id="退出环境">退出环境</h5>
+<p><code>conda deactivate</code></p>
+<h5 id="删除环境">删除环境</h5>
+<p><code>conda remove --name py3.7 --all</code></p>
+<h5 id="查看所有环境">查看所有环境</h5>
+<p><code>conda env list</code></p>
+<h5 id="conda安装numpy模块">conda安装numpy模块</h5>
+<p><code>conda install numpy</code></p>
+<h5 id="查看安装的模块">查看安装的模块</h5>
+<p><code>conda list</code><br>
+或者<br>
+<code>conda list --name py3.7</code></p>
+<h5 id="查看某个模块的信息">查看某个模块的信息</h5>
+<p><code>conda search numpy</code></p>
+<h5 id="删除模块">删除模块</h5>
+<p><code>conda remove numpy</code><br>
+或者<br>
+<code>conda remove --name py3.7 numpy</code></p>
+<h5 id="更新模块">更新模块</h5>
+<p><code>conda update numpy</code></p>
+<p>或者<br>
+<code>conda update --name py3.7 numpy</code></p>
+<p>更新全部模块：<br>
+<code>conda update --all</code></p>
+<h5 id="更新conda">更新conda</h5>
+<p><code>conda update conda</code></p>
+<h5 id="更新python">更新python</h5>
+<p><code>conda update python</code></p>
+<h5 id="生成condarc文件">生成<code>.condarc</code>文件</h5>
+<p><code>conda config --set show_channel_urls yes</code></p>
+<h5 id="设置channels">设置channels</h5>
+<p>设置国内源，这里北京外国语的conda源，或者也可以就搞个魔法工具，用默认的源</p>
+<p>这俩是必须有的：<br>
+<code>conda config --add channels https://mirrors.bfsu.edu.cn/anaconda/pkgs/main/</code></p>
+<p><code>conda config --add channels https://mirrors.bfsu.edu.cn/anaconda/	pkgs/free/</code></p>
+<p>安装pytorch，你需要这个：<br>
+<code>conda config --add channels https://mirrors.bfsu.edu.cn/anaconda/cloud/pytorch/</code></p>
+<p>最重要的一点就是，要加上<code>pytorch/</code><br>
+网上很多教程都是到<code>cloud/</code>就结束了</p>
+<p>安装pytorch的时候，在官网复制的，请去掉最后的<code>-c pytorch</code>，这个命令是去pytorch官网下载pytorch系列模块</p>
+<h5 id="查看channels">查看channels</h5>
+<p><code>conda config --show channels</code></p>
+<h5 id="删除channels">删除channels</h5>
+<p><code>conda config --remove channels &lt;urls&gt;</code></p>
+<h5 id="删除所有channels">删除所有channels</h5>
+<p><code>conda config --remove-key --channels</code></p>
+<h5 id="恢复默认channels">恢复默认channels</h5>
+<p><code>conda config --remove-key channels</code></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://tao5436.github.io/post/hello-gridea/</id>

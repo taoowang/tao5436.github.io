@@ -5,7 +5,7 @@
     
 <meta charset="utf-8" >
 
-<title>Hello Gridea | tao</title>
+<title>Conda | tao</title>
 <meta name="description" content="莫听穿林打叶声    何妨吟啸且徐行">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -80,15 +80,15 @@
       <div class="content-container">
         <div class="post-detail">
           
-          <h2 class="post-title">Hello Gridea</h2>
+          <h2 class="post-title">Conda</h2>
           <div class="post-info post-detail-info">
-            <span><i class="icon-calendar-outline"></i> 2018-12-12</span>
+            <span><i class="icon-calendar-outline"></i> 2022-01-12</span>
             
               <span>
                 <i class="icon-pricetags-outline"></i>
                 
-                  <a href="https://tao5436.github.io/tag/mmI2PWHuA/">
-                    Gridea
+                  <a href="https://tao5436.github.io/tag/QQqBCjJ9A/">
+                    deeplearning
                     
                   </a>
                 
@@ -96,32 +96,71 @@
             
           </div>
           <div class="post-content">
-            <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
+            <h5 id="创建环境">创建环境</h5>
+<p><code>conda create --name py3.7 python=3.7</code></p>
+<h5 id="激活环境">激活环境</h5>
+<p><code>conda activate py3.7</code></p>
+<h5 id="退出环境">退出环境</h5>
+<p><code>conda deactivate</code></p>
+<h5 id="删除环境">删除环境</h5>
+<p><code>conda remove --name py3.7 --all</code></p>
+<h5 id="查看所有环境">查看所有环境</h5>
+<p><code>conda env list</code></p>
+<h5 id="conda安装numpy模块">conda安装numpy模块</h5>
+<p><code>conda install numpy</code></p>
+<h5 id="查看安装的模块">查看安装的模块</h5>
+<p><code>conda list</code><br>
+或者<br>
+<code>conda list --name py3.7</code></p>
+<h5 id="查看某个模块的信息">查看某个模块的信息</h5>
+<p><code>conda search numpy</code></p>
+<h5 id="删除模块">删除模块</h5>
+<p><code>conda remove numpy</code><br>
+或者<br>
+<code>conda remove --name py3.7 numpy</code></p>
+<h5 id="更新模块">更新模块</h5>
+<p><code>conda update numpy</code></p>
+<p>或者<br>
+<code>conda update --name py3.7 numpy</code></p>
+<p>更新全部模块：<br>
+<code>conda update --all</code></p>
+<h5 id="更新conda">更新conda</h5>
+<p><code>conda update conda</code></p>
+<h5 id="更新python">更新python</h5>
+<p><code>conda update python</code></p>
+<h5 id="生成condarc文件">生成<code>.condarc</code>文件</h5>
+<p><code>conda config --set show_channel_urls yes</code></p>
+<h5 id="设置channels">设置channels</h5>
+<p>设置国内源，这里北京外国语的conda源，或者也可以就搞个魔法工具，用默认的源</p>
+<p>这俩是必须有的：<br>
+<code>conda config --add channels https://mirrors.bfsu.edu.cn/anaconda/pkgs/main/</code></p>
+<p><code>conda config --add channels https://mirrors.bfsu.edu.cn/anaconda/	pkgs/free/</code></p>
+<p>安装pytorch，你需要这个：<br>
+<code>conda config --add channels https://mirrors.bfsu.edu.cn/anaconda/cloud/pytorch/</code></p>
+<p>最重要的一点就是，要加上<code>pytorch/</code><br>
+网上很多教程都是到<code>cloud/</code>就结束了</p>
+<p>安装pytorch的时候，在官网复制的，请去掉最后的<code>-c pytorch</code>，这个命令是去pytorch官网下载pytorch系列模块</p>
+<h5 id="查看channels">查看channels</h5>
+<p><code>conda config --show channels</code></p>
+<h5 id="删除channels">删除channels</h5>
+<p><code>conda config --remove channels &lt;urls&gt;</code></p>
+<h5 id="删除所有channels">删除所有channels</h5>
+<p><code>conda config --remove-key --channels</code></p>
+<h5 id="恢复默认channels">恢复默认channels</h5>
+<p><code>conda config --remove-key channels</code></p>
 
           </div>
         </div>
 
         
+          <div class="next-post">
+            <a class="purple-link" href="https://tao5436.github.io/post/hello-gridea/">
+              <h3 class="post-title">
+                下一篇：Hello Gridea
+              </h3>
+            </a>
+          </div>
+          
       </div>
 
       
