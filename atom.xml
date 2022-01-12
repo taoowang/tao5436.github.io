@@ -2,11 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://tao5436.github.io</id>
     <title>tao</title>
-    <updated>2022-01-12T05:02:35.417Z</updated>
+    <updated>2022-01-12T05:14:19.884Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://tao5436.github.io"/>
     <link rel="self" href="https://tao5436.github.io/atom.xml"/>
-    <subtitle>莫听穿林打叶声    何妨吟啸且徐行</subtitle>
     <logo>https://tao5436.github.io/images/avatar.png</logo>
     <icon>https://tao5436.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, tao</rights>
